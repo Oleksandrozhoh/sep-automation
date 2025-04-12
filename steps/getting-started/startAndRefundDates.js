@@ -26,6 +26,5 @@ Then("Program refund date is correct", async function () {
   const ACTUAL_REFUND_DATE =
     await startApplicationPage.programStartDate.innerText();
   const EXPECTED_REFUND_DATE = productInfo.startDate;
-    .expect(ACTUAL_REFUND_DATE)
-    .toEqual(EXPECTED_REFUND_DATE);
+  expect(ACTUAL_REFUND_DATE).toEqual(EXPECTED_REFUND_DATE);
 });

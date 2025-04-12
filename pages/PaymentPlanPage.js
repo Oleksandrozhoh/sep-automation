@@ -106,9 +106,8 @@ export class PaymentPlanPage extends BasePage {
     this.iHaveAPromoCodeButtonUnderInstallments = page.locator(
       "(//button[contains(text(), 'I have a promo code')])[2]"
     );
-    this.inactiveNextButton = page.locator("//button[text()='Next']");
-    this.activeNextButton = page.locator(
-      "//button[@class = 'next-button' and text()='Next']"
+    this.nextButton = page.locator(
+      "//div[@class='action-buttons']//button[contains(.,'Next')]"
     );
     this.backButton = page.locator("//span[@class='back-button']");
     this.footerText = page.locator(
